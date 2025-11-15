@@ -17,14 +17,9 @@ export default function Home() {
             height={56}
             className="h-auto w-full max-w-[160px] mx-auto"
           />
-          <div className="space-y-3">
-            <h1 className="text-4xl font-bold text-slate-900 tracking-tight">
-              Learning Employment Records Network
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
-              Choose a role to explore the platform
-            </p>
-          </div>
+          <h1 className="text-4xl font-bold text-slate-900 tracking-tight max-w-2xl mx-auto">
+            Choose a role to explore the platform
+          </h1>
         </div>
 
         {/* Role Cards */}
