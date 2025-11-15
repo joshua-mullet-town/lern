@@ -562,6 +562,54 @@ async function seed() {
     console.log(`✓ Rating created: ${rating.status} ${rating.rater_type} rating for ${id}`);
   }
 
+  // 7. Create artifacts (exported from actual uploads)
+  console.log('\nCreating artifacts...');
+  const artifactDefs = [
+    {
+      id: 'artifact-agent-billy-logo',
+      uploaded_by: TEST_LEARNER_ID,
+      learner_id: TEST_LEARNER_ID,
+      file_url: 'https://firebasestorage.googleapis.com/v0/b/lern-poc.firebasestorage.app/o/artifacts%2Ftest-learner-main%2F1763188408457_agent-billy-logo.png?alt=media&token=bdee4b50-2fd3-4d7c-90fd-4e2e577f701f',
+      file_type: 'png',
+      file_size: 556740,
+      file_name: 'agent-billy-logo',
+      competency_ids: ['comp-data-analysis'],
+      created_at: daysAgo(10),
+    },
+    {
+      id: 'artifact-important-doc',
+      uploaded_by: TEST_LEARNER_ID,
+      learner_id: TEST_LEARNER_ID,
+      file_url: 'https://firebasestorage.googleapis.com/v0/b/lern-poc.firebasestorage.app/o/artifacts%2Ftest-learner-main%2F1763193786782_Important%20Document.pdf?alt=media&token=6284fc94-3217-42d4-ab1d-9bbaa7ef0fdf',
+      file_type: 'pdf',
+      file_size: 40051,
+      file_name: 'Important Document',
+      competency_ids: ['comp-web-dev'],
+      created_at: daysAgo(8),
+    },
+    {
+      id: 'artifact-garage-sale',
+      uploaded_by: TEST_LEARNER_ID,
+      learner_id: TEST_LEARNER_ID,
+      file_url: 'https://firebasestorage.googleapis.com/v0/b/lern-poc.firebasestorage.app/o/artifacts%2Ftest-learner-main%2F1763188428208_4676a9b4-c13a-49fc-9ee0-e13d25000c0c.jpg?alt=media&token=f1242993-760f-42dc-89d0-c63f18706d02',
+      file_type: 'jpg',
+      file_size: 2601262,
+      file_name: 'garage sale',
+      competency_ids: ['comp-critical-thinking'],
+      created_at: daysAgo(12),
+    },
+  ];
+
+  for (const artifactDef of artifactDefs) {
+    const { id, created_at, ...artifact } = artifactDef;
+    await db.collection(COLLECTION_NAMES.artifacts).doc(id).set({
+      ...artifact,
+      created_at: Timestamp.fromDate(created_at),
+      updated_at: Timestamp.fromDate(created_at),
+    });
+    console.log(`✓ Artifact created: ${artifact.file_name} (${artifact.file_type})`);
+  }
+
   console.log('\n✅ Seed complete!\n');
   console.log('🎯 Testing Guide:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
