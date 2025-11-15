@@ -6,6 +6,8 @@ import { CompetencyCard } from '@/components/competency/CompetencyCard';
 import { CreateCompetencyModal } from '@/components/competency/CreateCompetencyModal';
 import { POCNotes } from '@/components/ui/poc-notes';
 
+export const dynamic = 'force-dynamic';
+
 export default async function CompetenciesPage() {
   // Fetch competencies from Firestore
   const competenciesRef = collection(db, COLLECTION_NAMES.competencies).withConverter(
