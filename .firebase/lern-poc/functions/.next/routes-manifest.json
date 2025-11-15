@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/learners/[learnerId]",
+      "regex": "^/learners/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlearnerId": "nxtPlearnerId"
+      },
+      "namedRegex": "^/learners/(?<nxtPlearnerId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/master/rate/[ratingId]",
+      "regex": "^/master/rate/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPratingId": "nxtPratingId"
+      },
+      "namedRegex": "^/master/rate/(?<nxtPratingId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/profile/[learnerId]",
+      "regex": "^/profile/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlearnerId": "nxtPlearnerId"
+      },
+      "namedRegex": "^/profile/(?<nxtPlearnerId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/analyze-transcript",
+      "regex": "^/api/analyze\\-transcript(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/analyze\\-transcript(?:/)?$"
+    },
+    {
+      "page": "/api/competencies",
+      "regex": "^/api/competencies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/competencies(?:/)?$"
+    },
+    {
+      "page": "/api/learner/display-order",
+      "regex": "^/api/learner/display\\-order(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/learner/display\\-order(?:/)?$"
+    },
+    {
+      "page": "/api/learner/visibility",
+      "regex": "^/api/learner/visibility(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/learner/visibility(?:/)?$"
+    },
+    {
+      "page": "/competencies",
+      "regex": "^/competencies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/competencies(?:/)?$"
+    },
+    {
+      "page": "/learner",
+      "regex": "^/learner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learner(?:/)?$"
+    },
+    {
+      "page": "/learner/portfolio",
+      "regex": "^/learner/portfolio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learner/portfolio(?:/)?$"
+    },
+    {
+      "page": "/learners",
+      "regex": "^/learners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learners(?:/)?$"
+    },
+    {
+      "page": "/master",
+      "regex": "^/master(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

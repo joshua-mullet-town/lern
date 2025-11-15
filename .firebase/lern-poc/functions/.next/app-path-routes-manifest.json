@@ -1,0 +1,18 @@
+{
+  "/(educator)/competencies/page": "/competencies",
+  "/(educator)/learners/[learnerId]/page": "/learners/[learnerId]",
+  "/(educator)/learners/page": "/learners",
+  "/(learner)/learner/page": "/learner",
+  "/(learner)/learner/portfolio/page": "/learner/portfolio",
+  "/(master)/master/page": "/master",
+  "/(master)/master/rate/[ratingId]/page": "/master/rate/[ratingId]",
+  "/(master)/search/page": "/search",
+  "/(public)/profile/[learnerId]/page": "/profile/[learnerId]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/analyze-transcript/route": "/api/analyze-transcript",
+  "/api/competencies/route": "/api/competencies",
+  "/api/learner/display-order/route": "/api/learner/display-order",
+  "/api/learner/visibility/route": "/api/learner/visibility",
+  "/page": "/"
+}

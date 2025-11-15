@@ -1,0 +1,18 @@
+{
+  "/(educator)/competencies/page": "app/(educator)/competencies/page.js",
+  "/(educator)/learners/[learnerId]/page": "app/(educator)/learners/[learnerId]/page.js",
+  "/(educator)/learners/page": "app/(educator)/learners/page.js",
+  "/(learner)/learner/page": "app/(learner)/learner/page.js",
+  "/(learner)/learner/portfolio/page": "app/(learner)/learner/portfolio/page.js",
+  "/(master)/master/page": "app/(master)/master/page.js",
+  "/(master)/master/rate/[ratingId]/page": "app/(master)/master/rate/[ratingId]/page.js",
+  "/(master)/search/page": "app/(master)/search/page.js",
+  "/(public)/profile/[learnerId]/page": "app/(public)/profile/[learnerId]/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/analyze-transcript/route": "app/api/analyze-transcript/route.js",
+  "/api/competencies/route": "app/api/competencies/route.js",
+  "/api/learner/display-order/route": "app/api/learner/display-order/route.js",
+  "/api/learner/visibility/route": "app/api/learner/visibility/route.js",
+  "/page": "app/page.js"
+}

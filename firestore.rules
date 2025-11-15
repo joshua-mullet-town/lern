@@ -1,0 +1,12 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // TEMPORARY POC RULES - OPEN ACCESS FOR DEVELOPMENT
+    // TODO: Restore proper auth rules when implementing authentication
+
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

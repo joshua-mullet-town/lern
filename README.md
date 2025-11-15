@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LERN Platform
 
-## Getting Started
+**Learning Employment Records Network** - A competency verification platform connecting learners, educators, and industry experts.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run dev server (port 4242)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Deploy to Firebase
+npm run deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Live POC**: https://lern-poc.web.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Documentation
 
-## Learn More
+- **[MVP Outline](docs/mvp-outline.md)** - Feature scope and user stories
+- **[Technical Architecture](docs/technical-architecture.md)** - Stack decisions and implementation phases
+- **[Code Conventions](docs/CONVENTIONS.md)** - Naming standards and best practices
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 14** (App Router, TypeScript, Server Components)
+- **Firebase** (Firestore, Auth, Storage, Hosting)
+- **Tailwind CSS + shadcn/ui** (Styling)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+lern/
+├── app/                    # Next.js pages and routes
+├── components/             # React components
+├── types/                  # Shared TypeScript types
+├── lib/                    # Utilities, converters, Firebase config
+├── docs/                   # Project documentation
+└── firebase.json           # Firebase configuration
+```
+
+---
+
+## Firebase Project
+
+- **Project ID**: `lern-poc`
+- **Console**: https://console.firebase.google.com/project/lern-poc
+
+---
+
+## Development
+
+Built with ❤️ using Claude Code
