@@ -146,3 +146,17 @@ interface EducatorWithStats extends User {
 4. Only create a new type if it's truly a new entity
 
 **Why this matters:** Type reuse provides clarity for both humans and AI. When types proliferate unnecessarily, it becomes unclear what the "source of truth" is and creates maintenance burden.
+
+## 🚀 DEPLOYMENT POLICY
+
+**CRITICAL: Only deploy when explicitly requested by the user.**
+
+❌ **DO NOT:**
+- Automatically deploy after completing tasks
+- Deploy without being asked
+- Assume deployment is needed
+
+✅ **DO:**
+- Wait for explicit deployment request ("deploy this", "push to production", etc.)
+- Ask if user wants to deploy if unclear
+- Only run `vercel --prod` when specifically instructed

@@ -106,6 +106,27 @@ export default function Home() {
             </p>
           </CardContent>
         </Card>
+
+        {/* Missing Features Warning */}
+        <Card className="border-2 border-amber-300 bg-amber-50">
+          <CardContent className="py-6">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                !
+              </div>
+              <div>
+                <h3 className="font-semibold text-amber-900 mb-2">POC Limitations</h3>
+                <p className="text-sm text-amber-800 mb-3">
+                  The following features were scoped but not fully implemented in this proof-of-concept:
+                </p>
+                <ul className="text-sm text-amber-800 space-y-1 ml-4">
+                  <li>• <strong>ABC Data (Attendance/Behavior/Credits)</strong> - No &quot;On Track / Off Track&quot; status indicators for holistic student tracking</li>
+                  <li>• <strong>Admin Exports & Reporting</strong> - No SIS export, state reporting, or data export functionality for compliance/integration</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
