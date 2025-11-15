@@ -97,17 +97,7 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Footer Note */}
-        <Card className="border-slate-200 bg-slate-50">
-          <CardContent className="text-center py-6">
-            <p className="text-sm text-slate-600">
-              <strong>POC Demo:</strong> This is a proof-of-concept demonstrating the LERN platform&apos;s three-way competency rating system.
-              Each role has hardcoded test data for exploration.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Missing Features Warning */}
+        {/* POC Demo Note */}
         <Card className="border-2 border-amber-300 bg-amber-50">
           <CardContent className="py-6">
             <div className="flex items-start gap-3">
@@ -115,9 +105,12 @@ export default function Home() {
                 !
               </div>
               <div>
-                <h3 className="font-semibold text-amber-900 mb-2">POC Limitations</h3>
+                <h3 className="font-semibold text-amber-900 mb-2">POC Demo Notes</h3>
                 <p className="text-sm text-amber-800 mb-3">
-                  The following features were scoped but not fully implemented in this proof-of-concept:
+                  This is a proof-of-concept with hardcoded test data and no authentication. The goal is to gather feedback and identify areas for improvement before full development.
+                </p>
+                <p className="text-sm text-amber-800 mb-2 font-medium">
+                  Known limitations in this demo:
                 </p>
                 <ul className="text-sm text-amber-800 space-y-1 ml-4">
                   <li>• <strong>ABC Data (Attendance/Behavior/Credits)</strong> - No &quot;On Track / Off Track&quot; status indicators for holistic student tracking</li>
