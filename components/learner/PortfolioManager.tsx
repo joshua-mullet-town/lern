@@ -116,8 +116,8 @@ export function PortfolioManager({ learnerId, learner, competencies, artifacts }
       <div>
         <h1 className="text-3xl font-bold">Portfolio Manager</h1>
         <POCNotes>
-          <p className="text-slate-600 mt-2 max-w-3xl">
-            Build your professional portfolio by selecting which competencies and artifacts to share publicly. Generate a unique shareable link to include in job applications, resumes, or college applications. This is your bridge to opportunity—your verified record becomes instantly visible and trustworthy to any employer, not just our partner network.
+          <p>
+            Control which competencies appear on your public profile. Toggle visibility, reorder items, and generate a shareable link to include in job applications or resumes. Employers visiting your link will see your verified ratings and work artifacts.
           </p>
         </POCNotes>
       </div>

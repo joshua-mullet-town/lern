@@ -136,8 +136,8 @@ export default async function PublicProfilePage({ params }: PageProps) {
         <div>
           <h2 className="text-2xl font-semibold mb-2">Verified Competencies</h2>
           <POCNotes>
-            <p className="text-slate-600 mb-6 max-w-3xl">
-              This public portfolio showcases verified skills and competencies, each rated using a standardized 0-4 rubric. The "triple-rating" system includes self-assessments, educator verifications, and industry expert (Master) endorsements—providing the trust signals employers need to confidently evaluate this candidate's abilities beyond a traditional resume.
+            <p className="mb-6">
+              This portfolio displays verified competency ratings from three sources: self-assessment, educator verification, and industry expert endorsement. Each competency uses a standardized 0-4 rubric with supporting work artifacts where available.
             </p>
           </POCNotes>
           {visibleRatings.length === 0 ? (

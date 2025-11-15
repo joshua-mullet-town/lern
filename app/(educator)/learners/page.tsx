@@ -28,7 +28,7 @@ export default async function LearnersPage() {
             <h1 className="text-3xl font-bold tracking-tight">Learners</h1>
             <POCNotes>
               <p>
-                View and manage all students in your organization. Create new LERN profiles upon enrollment to establish their "single source of truth" from Day 1. Upload a transcript and AI will automatically analyze it to suggest initial competency ratings. Each learner's profile tracks competencies, portfolio artifacts, and verified ratings from educators, peers, and industry experts—building a comprehensive record that goes beyond traditional transcripts.
+                Add and manage student profiles. When creating a new learner, you can upload a transcript and AI will analyze it to suggest initial competency ratings. Each profile tracks ratings from multiple sources (self, educator, industry expert) and maintains a portfolio of work artifacts.
               </p>
             </POCNotes>
           </div>

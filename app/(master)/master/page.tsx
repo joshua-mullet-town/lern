@@ -120,8 +120,8 @@ export default function MasterDashboard() {
       <div>
         <h1 className="text-3xl font-bold">Rating Requests</h1>
         <POCNotes>
-          <p className="text-slate-600 mt-2 max-w-3xl">
-            As an industry expert (Master), your verifications are the most valuable endorsements in the LERN system. Review rating requests from educators and use the same 0-4 rubric to formally verify students' workplace competencies. Your third-party endorsement creates the critical "triple-rating" that employers trust—transforming student claims into verified credentials.
+          <p>
+            Review rating requests from educators and submit your verification using the 0-4 rubric. Your third-party rating adds credibility to student competency claims by providing an industry expert perspective alongside educator and self-assessment ratings.
           </p>
         </POCNotes>
       </div>

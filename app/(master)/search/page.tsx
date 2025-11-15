@@ -157,13 +157,11 @@ export default function MasterSearchPage() {
       <div>
         <h1 className="text-3xl font-bold mb-2">Search for Talent</h1>
         <POCNotes>
-          <p className="text-slate-600 mb-3 max-w-3xl">
-            Search the student talent pool by specific skill requirements. Set competency thresholds (e.g., "Collaboration" ≥ 3.0) to find qualified candidates whose verified skills match your job or internship needs. This directly leverages the LERN's triple-rating system to answer the employer's biggest question: "How do I know this resume is real?"
+          <p className="mb-3">
+            Search for students by competency requirements. Select one or more competencies and set minimum rating thresholds (0-4) to find candidates who meet all your criteria. Results only include students whose ratings are publicly visible.
           </p>
-          <p className="text-sm text-slate-700 bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <strong className="text-blue-900">How to use:</strong> Select a competency and set a minimum rating (0-4) to add search criteria.
-            You can add multiple competencies to find candidates who meet all requirements.
-            Click Search to see matching learner profiles.
+          <p className="text-sm bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <strong className="text-blue-900">How to use:</strong> Select a competency and set a minimum rating to add search criteria. Add multiple competencies to find candidates who meet all requirements. Click Search to see matching profiles.
           </p>
         </POCNotes>
       </div>

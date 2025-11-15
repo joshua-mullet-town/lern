@@ -107,8 +107,8 @@ export default function LearnerDashboard() {
       <div>
         <h1 className="text-3xl font-bold">My Competencies</h1>
         <POCNotes>
-          <p className="text-slate-600 mt-2 max-w-3xl">
-            This is your verified skills dashboard. Complete self-assessments to reflect on your competency levels and compare them with ratings from your educators and industry experts. This triple-rating system (Self, Mentor, Master) builds your "skills DNA"—a trusted, shareable record that proves your abilities to future employers beyond traditional grades and transcripts.
+          <p>
+            View your competency ratings from multiple sources: self-assessments, educator ratings, and industry expert verifications. Complete pending self-assessments and track your progress over time using the charts below.
           </p>
         </POCNotes>
       </div>

@@ -50,8 +50,8 @@ export default async function RateCompetencyPage({ params }: PageProps) {
       <div>
         <h1 className="text-3xl font-bold">Submit Rating</h1>
         <POCNotes>
-          <p className="text-slate-600 mt-2 max-w-3xl">
-            Use the 0-4 rubric below to rate this student's demonstrated competency in a workplace setting. Your external verification provides the critical "trust signal" that makes this student's skills legible and credible to all future employers. This is the most valuable endorsement in the LERN system.
+          <p>
+            Rate this student's competency using the 0-4 rubric based on your observations in a workplace setting. Your industry expert rating will be displayed alongside educator and self-assessment ratings on the student's public profile.
           </p>
         </POCNotes>
       </div>

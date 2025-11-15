@@ -88,7 +88,7 @@ export default async function LearnerProfilePage({ params }: PageProps) {
         <LearnerProfileHeader learner={learner} />
         <POCNotes>
           <p>
-            This is where you verify and track a student's competency mastery. Log verified skill ratings using the 0-4 rubric, request external validations from industry experts (Masters), and watch their learning journey unfold through progress charts. Each rating adds to their verified record—making the invisible (soft skills) visible, valuable, and employable.
+            Submit ratings for this student's competencies using the 0-4 rubric. You can also request ratings from industry experts (Masters) to add third-party verification. Progress charts show how ratings change over time.
           </p>
         </POCNotes>
         <div className="flex flex-col sm:flex-row gap-2 mt-4">

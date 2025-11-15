@@ -22,7 +22,7 @@ export default async function CompetenciesPage() {
             <h1 className="text-3xl font-bold tracking-tight">Competencies</h1>
             <POCNotes>
               <p>
-                Create and manage the hard and soft skills your students will master. These competencies form the foundation of your LERN system—each one uses a standardized 0-4 rubric that can be verified by educators, students (self-assessment), and industry experts. This shared taxonomy ensures skills are legible to employers and aligned with Indiana's new diploma requirements.
+                Create and manage the competencies (skills) that students will be rated on. Each competency uses a standardized 0-4 rubric for consistent evaluation across all raters.
               </p>
             </POCNotes>
           </div>
