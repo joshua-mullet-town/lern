@@ -45,7 +45,7 @@ export function CreateCompetencyModal() {
     setLoading(true);
 
     try {
-      await addDoc(collection(db, COLLECTION_NAMES.competencies), {
+      const docRef = await addDoc(collection(db, COLLECTION_NAMES.competencies), {
         org_id: ORG_ID,
         created_by: EDUCATOR_ID,
         title: formData.title,
@@ -55,14 +55,22 @@ export function CreateCompetencyModal() {
         created_at: Timestamp.now(),
       });
 
+      console.log('✅ Competency created with ID:', docRef.id);
+
       // Reset form and close modal
       setFormData({ title: '', description: '', type: 'hard' });
       setOpen(false);
 
       // Refresh the page to show new competency
+      console.log('Refreshing page...');
       router.refresh();
+
+      // Force a hard reload after a brief delay
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
     } catch (error) {
-      console.error('Error creating competency:', error);
+      console.error('❌ Error creating competency:', error);
       alert('Failed to create competency. Please try again.');
     } finally {
       setLoading(false);
