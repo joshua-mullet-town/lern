@@ -9,17 +9,22 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-6 pt-8">
           <Image
             src="/lern-logo-black.png"
             alt="LERN"
-            width={120}
-            height={42}
-            className="h-auto w-full max-w-[120px] mx-auto"
+            width={160}
+            height={56}
+            className="h-auto w-full max-w-[160px] mx-auto"
           />
-          <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
-            Learning Employment Records Network - Choose a role to explore the platform
-          </p>
+          <div className="space-y-3">
+            <h1 className="text-4xl font-bold text-slate-900 tracking-tight">
+              Learning Employment Records Network
+            </h1>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+              Choose a role to explore the platform
+            </p>
+          </div>
         </div>
 
         {/* Role Cards */}
