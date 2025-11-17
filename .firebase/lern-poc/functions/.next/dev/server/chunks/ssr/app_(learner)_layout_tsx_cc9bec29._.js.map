@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/joshuamullet/code/lern/app/%28learner%29/layout.tsx"],"sourcesContent":["export default function LearnerLayout({ children }: { children: React.ReactNode}) {\n  return (\n    <div className=\"min-h-screen bg-slate-50\">\n      <header className=\"bg-white border-b border-slate-200\">\n        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4\">\n          <h1 className=\"text-2xl font-bold\">LERN - Learner Portal</h1>\n        </div>\n      </header>\n      <main>\n        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8\">\n          {children}\n        </div>\n      </main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,cAAc,EAAE,QAAQ,EAAgC;IAC9E,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAO,WAAU;0BAChB,cAAA,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;wBAAG,WAAU;kCAAqB;;;;;;;;;;;;;;;;0BAGvC,8OAAC;0BACC,cAAA,8OAAC;oBAAI,WAAU;8BACZ;;;;;;;;;;;;;;;;;AAKX","debugId":null}}]
-}
