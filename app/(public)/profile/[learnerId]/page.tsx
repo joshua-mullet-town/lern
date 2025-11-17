@@ -135,11 +135,13 @@ export default async function PublicProfilePage({ params }: PageProps) {
 
         <div>
           <h2 className="text-2xl font-semibold mb-2">Verified Competencies</h2>
-          <POCNotes>
-            <p className="mb-6">
-              This portfolio displays verified competency ratings from three sources: self-assessment, educator verification, and industry expert endorsement. Each competency uses a standardized 0-4 rubric with supporting work artifacts where available.
-            </p>
-          </POCNotes>
+          <div className="mb-6">
+            <POCNotes>
+              <p>
+                This portfolio displays verified competency ratings from three sources: self-assessment, educator verification, and industry expert endorsement. Each competency uses a standardized 0-4 rubric with supporting work artifacts where available.
+              </p>
+            </POCNotes>
+          </div>
           {visibleRatings.length === 0 ? (
             <Card>
               <CardContent className="text-center py-12">
